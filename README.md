@@ -4,10 +4,10 @@ A static, responsive English portfolio built from the supplied CV, reports and p
 
 ## Files
 
-- `index.html`: content, five project cards with expandable details, education, experience, skills and contact.
+- `index.html`: content, seven project cards with expandable details, education, experience, skills and contact.
 - `styles.css`: desktop and mobile styles.
 - `script.js`: optional enhancements for direct project links and the footer year.
-- `assets/`: CAD figures extracted from the Bachelor and FEM reports, the full Bachelor report and the original downloadable CV.
+- `assets/`: CAD figures extracted from the Bachelor and FEM reports, the full Bachelor report and the downloadable CV.
 - `.nojekyll`: disables Jekyll processing on GitHub Pages.
 
 ## Preview
@@ -40,7 +40,7 @@ Official instructions: [Configure a GitHub Pages publishing source](https://docs
 
 ## Updating the content
 
-Edit text in `index.html` and design variables at the start of `styles.css`. Replace the PDF at `assets/Joseph-Rizk-CV.pdf` to update the downloadable CV. The included CV is the supplied original; the suggested FEM wording is supplied separately and has not been inserted into that PDF.
+Edit text in `index.html` and design variables at the start of `styles.css`. Replace the PDF at `assets/Joseph-Rizk-CV.pdf` to update the downloadable CV. Update the version query in both download links when replacing the PDF.
 
 The email, phone, city and education dates match the supplied CV. No LinkedIn profile URL was supplied, so none has been invented. Add a profile link to the contact section once you have the exact URL. Publishing the folder makes the included CV and contact information public.
 
