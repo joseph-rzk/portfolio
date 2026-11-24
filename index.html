@@ -98,17 +98,19 @@
           <div class="project-body">
             <div class="project-meta"><span>04 / Energy optimisation</span><span>2026</span></div>
             <h3>SmartPump Optimizer</h3>
-            <p class="subtitle">Industrial water pumping · Decision-support prototype</p>
-            <p>A Python and Streamlit tool that finds lower-cost hours to run an industrial water pump while meeting water demand and keeping the reservoir within operating limits.</p>
-            <ul class="tags"><li>Python</li><li>Mixed-integer optimisation</li><li>Time-series forecasting</li><li>Streamlit</li></ul>
+            <p class="subtitle">Pumped-storage hydropower · Decision-support prototype</p>
+            <p>SmartPump helps Swiss pumped-storage operators decide when to pump or generate electricity, how much to hedge, and whether a forward contract offer is worth accepting. It weighs expected returns against downside risk across electricity price scenarios.</p>
+            <ul class="tags"><li>Python</li><li>Probabilistic forecasting</li><li>Stochastic optimisation</li><li>Streamlit</li></ul>
             <details>
               <summary>Explore project <span aria-hidden="true">+</span></summary>
               <div class="detail-content">
-                <h4>Forecasting electricity prices and water demand</h4>
-                <p>The dashboard compares forecasting models against recent Swiss day-ahead electricity prices from ENTSO-E. It can also forecast water demand from uploaded hourly records.</p>
-                <h4>Scheduling under operating constraints</h4>
-                <p>A mixed-integer model schedules the pump hour by hour, accounting for reservoir capacity, minimum run and stop times, and limits on starts. In reversible pump-turbine mode, it jointly schedules pumping and generation and sizes a simulated electricity forward hedge across price scenarios.</p>
-                <p>A walk-forward backtest evaluates each daily plan at historical prices and carries the reservoir level and equipment state into the next day.</p>
+                <h4>Forecasting Swiss electricity demand and prices</h4>
+                <p>Specialised forecasting modules use demand, weather and grid data to estimate hourly electricity consumption and generate a range of possible price paths.</p>
+                <h4>Planning dispatch and hedges together</h4>
+                <p>A stochastic mixed-integer model plans pumping and generation up to seven days ahead. It jointly sizes a forward hedge and penalises losses in the worst price scenarios while respecting reservoir limits, minimum run times and limits on starts.</p>
+                <h4>Evaluating contract offers</h4>
+                <p>The dashboard reports fair and break-even prices for forward offers and stress-tests whether the proposed hedge reduces risk. Plant operators retain control of scheduling and contract decisions.</p>
+                <p>The prototype has been tested on synthetic data. Validation against historical Swiss market data and real plant operating data is planned.</p>
               </div>
             </details>
           </div>
